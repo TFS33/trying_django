@@ -1,0 +1,22 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+
+<h1>Add a New Person</h1>
+
+<form method="post">
+    {% csrf_token %}
+
+    <label for="first_name">First Name:</label>
+    <input id="first_name" type="text" name="first_name" value="{{ current_first_name }}">
+
+    <label for="last_name">Last Name:</label>
+    <input id="last_name" type="text" name="last_name" value="{{ current_last_name }}">
+
+    <label for="birth_date">Birthday:</label>
+    <input id="birth_date" type="date" name="birth_date" value="{{ current_birth_date }}">
+
+    <input type="submit" value="OK">
+</form>
+
+{% endblock %}

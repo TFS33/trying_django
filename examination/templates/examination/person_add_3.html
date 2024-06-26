@@ -1,0 +1,25 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+<h1>Add a New Person</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_table }}
+    <input type="submit" value="Submit">
+ </form>
+
+<h1> or </h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="first_name">First Name:</label>
+    {{ form.your_name }}
+
+    <label for="last_name">Last Name:</label>
+    {{ form.your_last_name }}
+
+    <label for="birth_day">Birthday:</label>
+    {{ form.your_birth_day }}
+
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

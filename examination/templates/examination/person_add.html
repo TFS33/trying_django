@@ -1,0 +1,29 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+<h1>Add Person</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Patvirtinti">
+</form>
+
+<h3 >arba</h3>
+<form method="post">
+    {% csrf_token %}
+    <div>
+
+        <label for="first_name">Vardas</label>
+        <input type="text" id="first_name" name="first_name">
+
+        <label for="last_name">Pavarde</label>
+        <input type="text" id="last_name" name="last_name">
+
+        <label for="birth_date">gimimo data<data value="1999-01-01"></data></label>
+        <input type="date" id="birth_date" name="birth_date">
+
+        <input type="submit" value="add">
+    </div>
+</form>
+{% endblock %}

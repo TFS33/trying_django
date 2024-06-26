@@ -1,0 +1,17 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+<h1>delete Person</h1>
+<h3> Ar tikrai norite istrinti ?:  {{ person }}</h3>
+<br>
+<form method="post">
+    {% csrf_token %}
+    <div>
+
+        <a href="{% url 'examination:person' person.pk %}" class="btn btn-primary">Atgal</a>
+        <input type="submit" class="btn btn-danger" value="Patvirtinti">
+    </div>
+
+</form>
+
+{% endblock %}

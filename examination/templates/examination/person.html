@@ -1,0 +1,24 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Person Details</h2>
+    <h3> ID:{{ pk }}</h3>
+    {% if person %}
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ person.first_name }} {{ person.last_name }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">ID: {{ person.id }}</h6>
+            <p class="card-text">Birth Date: {{ person.birth_date|date:"Y-m-d" }}</p>
+            <a href="{% url 'examination:person_update' person.id %}" class="btn btn-primary">Change</a>
+            <a href="{% url 'examination:person_delete' person.id %}" class="btn btn-danger" onclick="return confirm('DELETE?');">Delete</a>
+            <a href="{% url 'examination:person_delete_2' person.id %}" class="btn btn-danger">Delete_2</a>
+            <a href="{% url 'examination:persons' %}" class="btn btn-secondary">Back</a>
+            <a href="{% url 'examination:person_update' person.id  %}" class="btn btn-secondary">Atnaujinti</a>
+        </div>
+    </div>
+            {% else %}
+        <p>No person with such id.</p>
+        {% endif %}
+</div>
+{% endblock %}

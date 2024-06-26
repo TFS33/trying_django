@@ -1,0 +1,39 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+
+<h1>update Person</h1>
+
+<div class="container mt-4">
+{% if person %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" class="btn btn-primary" value="Patvirtinti">
+</form>
+{% else %}
+<p>No person with such id.</p>
+{% endif %}
+<h1> fRONt</h1>
+{% if person %}
+<form method="post">
+    {% csrf_token %}
+    <label for="first_name">First Name:</label>
+    <input id="first_name" type="text" name="first_name" value="{{ person.first_name }}">
+
+    <label for="last_name">Last Name:</label>
+    <input id="last_name" type="text" name="last_name" value="{{ person.last_name }}">
+
+    <label for="birth_date">Birthday:</label>
+    <input id="birth_date" type="date" name="birth_date" value="{{ person.birth_date }}">
+
+        <input type="submit" class="btn btn-primary" value="Patvirtinti">
+</form>
+
+{% else %}
+<p>No person with such id.</p>
+
+</div>
+
+{% endif %}
+{% endblock %}
