@@ -3,10 +3,10 @@
 {% load static %}
 
 {% block content %}
-<h3>Testee's</h3>
+<h3 xmlns:background-color="http://www.w3.org/1999/xhtml" xmlns:background-color="http://www.w3.org/1999/xhtml">Testee's</h3>
 
 <div class="container mt-4">
-    <div class="card" style="width: 10rem;">
+    <div class="card card-purple" style="width: 10rem;" >
         <img src="{% static 'examination/images/roll_rul.webp' %}" class="card-img-top" alt="Card image cap">
         <div class="card-body">
             <h1 class="card-title"></h1>
@@ -17,9 +17,10 @@
         </div>
     </div>
 </div>
-<div class="container mt-4" style="background-color: rgba(255, 005, 255, 0.5); padding: 20px; border-radius: 8px; margin-top: 20px;">
+<hr>
+<div class="container mt-4" style="background-color: rgba(25, 005, 255, 0.3); padding: 20px; border-radius: 8px; margin-top: 20px;">
 {% if persons %}
-    <table class="table table-dark table-sm">
+    <table class="table table-dark rounded-pill">
         <thead>
             <tr>
                 <th scope="col">ID</th>

@@ -1,0 +1,51 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container mt-4" style="background-color: rgba(25, 5, 255, 0.3); padding: 20px; border-radius: 8px; margin-top: 20px;">
+    <a href="{% url 'examination:add_question' %}" class="btn btn-custom-prideti-btn">Prideti</a>
+{% if questions %}
+
+    <table class="table table-rounded-dark-purple">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Question</th>
+                <th scope="col">Complexity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for question in questions %}
+            <tr class="clickable-row" data-href="{% url 'examination:add_answer' question.pk %}">
+                <td>{{ question.id }}</td>
+                <td>{{ question.question }}</td>
+                <td>{{ question.complexity }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No questions available.</p>
+{% endif %}
+
+</div>
+    <hr>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click event to each table row with the class 'clickable-row'
+    const rows = document.querySelectorAll('tr.clickable-row');
+    rows.forEach(row => {
+        row.addEventListener('click', function() {
+            // Navigate to the URL specified in the data-href attribute
+            window.location.href = this.dataset.href;
+        });
+    });
+});
+</script>
+
+{% endblock %}

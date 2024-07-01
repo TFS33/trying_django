@@ -1,0 +1,17 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<hr>
+<div class="container mt-4" style="background-color: rgba(25, 5, 255, 0.3); padding: 20px; border-radius: 8px; margin-top: 20px;">
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="ADD">
+     <a class="btn btn-primary" href="{% url 'examination:show_questions' %}">Atgal</a>
+</form>
+</div>
+<hr>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'home/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'examination/css/style_for_answers.css' %}">
+
+{% block content %}
+<div class="container mt-4" style="background-color: rgba(25, 5, 255, 0.3); padding: 20px; border-radius: 30px; margin-top: 20px;">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <strong>Klausimo informacija:</strong> ID({{ question.pk }}) / {{ question.question }}
+        </div>
+        <div>
+            <a href="{% url 'examination:delete_question' question.id %}" class="btn btn-custom-delete-btn" onclick="return confirm('DELETE?');">Delete</a>
+            <a href="{% url 'examination:update_question' question.id %}" class="btn btn-custom-update-btn">Update</a>
+             <a href="{% url 'examination:show_questions' %}" class="btn btn-custom-atgal-btn">Grįžti</a>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+
+<div class="container mt-4" style="background-color: rgba(25, 5, 255, 0.3); padding: 20px; border-radius: 30px; margin-top: 20px;">
+<h3>Prideti atsakyma</h3>
+
+
+    <div class="input-group">
+<form method="post" action="{% url 'examination:add_answer' pk=question.pk %}">
+
+    {% csrf_token %}
+
+
+    <div class="input-group mb-xxl-3" >
+
+        <span class="input-group-text">Atsakymas:</span>
+        <input type="text" aria-label="answer" class="form-control" name="answer">
+
+        <span class="input-group-text">Ar teisingas?</span>
+        <div class="input-group-text">
+            <input type="checkbox" aria-label="Correct answer" class="form-check-input" name="is_correct">
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">Patvirtinti</button>
+
+    </div>
+</form>
+</div>
+
+</div>
+
+<hr>
+
+
+
+<div class="container mt-4" style="background-color: rgba(25, 5, 255, 0.3); padding: 20px; border-radius: 30px; margin-top: 20px;">
+    <h2>Atsakymai</h2>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Answer</th>
+                <th scope="col">Correct</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for answer in answers %}
+            <tr>
+                <td>{{ answer.id }}</td>
+                <td>{{ answer.answer }}</td>
+                <td>{{ answer.correct }}</td>
+                <td>
+                    <a href="{% url 'examination:delete_answer' pk_question=question.pk pk_answer=answer.pk %}"
+                       class="btn btn-custom-delete-btn-for-table"
+                       onclick="return confirm('DELETE?');">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+
+{% endblock %}

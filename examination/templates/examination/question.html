@@ -1,0 +1,22 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4" style="background-color: rgba(25, 5, 255, 0.3); padding: 20px; border-radius: 8px; margin-top: 20px;">
+<table class="table table-bordered border-primary">
+    <h1>ID: {{ question.pk }}</h1>
+<p>Klausimas: {{ question.question }}</p>
+ <a href="{% url 'examination:delete_question' question.id %}" class="btn btn-danger" onclick="return confirm('DELETE?');">Delete</a>
+    <a href="{% url 'examination:update_question' question.id %}" class="btn btn-success" >Update</a>
+        <a href="{% url 'examination:add_answer' question.id %}" class="btn btn-success" >Update</a>
+</table>
+<h2>Atsakymai</h2>
+{% for answer in answers %}
+    <p>{{ answer.answer }}</p>
+ <a href="{% url 'examination:delete_answer' pk_question=question.pk pk_answer=answer.pk %}" class="btn btn-danger" onclick="return confirm('DELETE?');">Delete</a>
+{% endfor %}
+</div>
+<hr>
+
+
+{% endblock %}

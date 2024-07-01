@@ -1,0 +1,24 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<hr>
+    <div class="input-group">
+<form method="post" action="{% url 'examination:add_answer' pk=question.pk %}">
+    {% csrf_token %}
+    <div class="input-group mb-3">
+        <span class="input-group-text">Atsakymas:</span>
+        <input type="text" aria-label="answer" class="form-control" name="answer">
+
+        <span class="input-group-text">Ar teisingas?</span>
+        <div class="input-group-text">
+            <input type="checkbox" aria-label="Correct answer" class="form-check-input" name="is_correct">
+        </div>
+        <button type="submit" class="btn btn-primary">Patvirtinti</button>
+    </div>
+</form>
+</div>
+<hr>
+
+{% endblock %}
