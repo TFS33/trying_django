@@ -3,14 +3,11 @@
 
 {% block content %}
 
-<form action="" method="post">
+<form method="post">
     {% csrf_token %}
-    <div class="input-group mb-3">
-        <span class="input-group-text">Klausimo informacija:</span>
-        <input type="text" aria-label="question" class="form-control" name="question" value="{{ question.question }}">
-    <input type="submit"  class="btn btn-primary" value="UPDATE">
-        <a href="{% url 'examination:add_answer' question.id %}" class="btn btn-outline-primary">Atgal</a>
-    </div>
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">UPDATE</button>
+    <a href="{% url 'examination:add_answer' question.id %}" class="btn btn-outline-primary">Back</a>
 </form>
 
 

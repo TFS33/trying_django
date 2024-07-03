@@ -22,6 +22,9 @@ urlpatterns = [
     path('answers/<int:pk>/', views.add_answer, name='add_answer'),
     path('questions/<int:pk_question>/answers/<int:pk_answer>/delete/', views.delete_answer, name='delete_answer'),
     path('questions/<int:pk>/update/', views.update_question, name='update_question'),
+    path('tests/', views.show_tests, name='show_tests'),
+    path('test/configure/', views.configure_test, name='configure_test'),
+
 
 
 ]

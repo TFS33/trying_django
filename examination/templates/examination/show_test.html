@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+{% block content %}
+<h1>Sugeneruotas testas</h1>
+<form method="post">
+  {% csrf_token %}
+  {% for question, answers in questions_with_answers %}
+  <div>
+    <h3>{{ question.question }} ({{ question.get_complexity_display }})</h3>
+    {% for answer in answers %}
+    <label>
+      <input type="radio" name="question_{{ question.id }}" value="{{ answer.id }}">
+      {{ answer.answer }}
+    </label><br>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  <button type="submit">Submit Test</button>
+</form>
+{% endblock %}

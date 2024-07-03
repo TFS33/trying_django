@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 
-from examination.forms import PersonForm, NameForm, TestQuestionForm, TestAnswerForm
-from examination.models import Person, Test, TestQuestion, TestAnswer
+from examination.forms import PersonForm, NameForm, TestQuestionForm, TestAnswerForm, TestForm, TestConfigurationForm
+from examination.models import Person, Test, TestQuestion, TestAnswer, TestTheme
+from .helpers.test_config import get_all_questions, populate_answer_fields
 
 
 def index(request):
@@ -99,25 +100,15 @@ def show_questions(request):
 
 
 def add_question(request):
-    questions = TestQuestion.objects.all()
     if request.method == 'POST':
         form = TestQuestionForm(request.POST)
         if form.is_valid():
-            data = form.cleaned_data
-            question = TestQuestion(
-                question=data['question'],
-                complexity=data['complexity'],
-            )
-            question.save()
-            return redirect('examination:add_question')
+            form.save()
+            return redirect('examination:show_questions')
     else:
         form = TestQuestionForm()
 
-    context = {
-        'questions': questions,
-        'form': form
-    }
-    return render(request, 'examination/add_question.html', context)
+    return render(request, 'examination/add_question.html', {'form': form})
 
 
 def delete_question(request, pk):
@@ -189,8 +180,43 @@ def update_question(request, pk):
             return redirect('examination:add_answer', pk=question.pk)
     else:
         form = TestQuestionForm(instance=question)
+
     return render(request, 'examination/update_question.html', {'form': form, 'question': question})
 
 
 def question(request):
     return render(request, 'examination/question.html')
+
+
+def show_tests(request, ):
+    tests = Test.objects.all()
+    context = {'tests': tests}
+    return render(request, 'examination/configure_test.html', context)
+
+
+def configure_test(request):
+    if request.method == 'POST':
+        form = TestConfigurationForm(request.POST)
+        if form.is_valid():
+            num_questions = int(form.cleaned_data['number_of_questions'])
+            themes = form.cleaned_data['theme']
+            complexities = form.cleaned_data['complexity']
+
+            questions = TestQuestion.objects.all()
+            if themes:
+                questions = questions.filter(theme__in=themes)
+            if complexities:
+                questions = questions.filter(complexity__in=[int(c) for c in complexities])
+
+            questions = list(questions.order_by('?')[:num_questions])
+
+            questions_with_answers = [(question, populate_answer_fields(question)) for question in questions]
+
+            return render(request, 'examination/show_test.html', {'questions_with_answers': questions_with_answers})
+
+    else:
+        form = TestConfigurationForm()
+
+    return render(request, 'examination/configure_test.html', {'form': form})
+
+

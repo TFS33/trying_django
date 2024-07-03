@@ -1,0 +1,23 @@
+.container-custom-grid {
+  display: grid ;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgba(87, 64, 161, 0.6);
+    color: white;
+    padding: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.btn-custom-add-btn {
+  background-color: #0729e8;
+  border: indigo;
+  color: white;
+  padding: 15px 32px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+
+  cursor: pointer;
+}

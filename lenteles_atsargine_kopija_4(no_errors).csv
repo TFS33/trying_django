@@ -1,0 +1,545 @@
+id,answer,correct,question_id
+1,Išmetimas kortų,0,1
+2,Statymas su silpna ranka siekiant apgauti varžovus,1,1
+3,Laikymas didžiausios vertės kortos,0,1
+4,Atidengimas visų kortų,0,1
+5,Statymas didžiausia suma,0,1
+6,Rinkimas informacijos apie varžovus,0,1
+7,Straight Flush,0,2
+8,Keturi vienodi,0,2
+9,Pilnas namas,0,2
+10,Royal Flush,1,2
+11,Flush,0,2
+12,Straight,0,2
+13,Tris vienodos ir pora,1,3
+14,Tris vienodos ir du vienodi,1,3
+15,Keturi vienodi,0,3
+16,Dvi poros,0,3
+17,Penkios vienodos kortos,0,3
+18,Nė viena iš išvardytų,0,3
+19,5 kortos,0,4
+20,2 kortos,1,4
+21,4 kortos,0,4
+22,3 kortos,0,4
+23,1 korta,0,4
+24,6 kortos,0,4
+26,Pirmos dvi bendros kortos,0,5
+27,Pirmoji bendra korta,0,5
+29,Paskutinė bendra korta,0,5
+30,Nė viena iš išvardytų,0,5
+545,Pirmosios trys atverstos bendros kortos,1,5
+546,Tavo mama,0,5
+31,Pirmoji pozicija po didžiojo blindo,0,6
+32,Antroji pozicija po didžiojo blindo,0,6
+33,"Pozicija, iš kurios dalinamos kortos",1,6
+34,Paskutinė pozicija prieš didįjį blindą,0,6
+35,Pirmoji pozicija prieš mažąjį blindą,0,6
+36,Pirmoji pozicija po mažojo blindo,0,6
+37,Paskutinė bendra korta,0,7
+38,Antra bendra korta,0,7
+39,Trečia bendra korta,0,7
+40,Ketvirtoji bendra korta,1,7
+41,Pirmoji bendra korta,0,7
+42,Antroji bendra korta,0,7
+43,Pirmoji bendra korta,0,8
+44,Antra bendra korta,0,8
+45,Trečia bendra korta,0,8
+46,Ketvirtoji bendra kort,0,8
+47,Penktoji ir paskutinė bendra korta,1,8
+48,Šeštoji bendra korta,0,8
+49,Statyti pusę savo žetonų,0,9
+50,Statyti visus savo žetonus,1,9
+51,Statyti visus likusius žetonus,1,9
+52,Statyti minimalią leistiną sumą,0,9
+53,Padvigubinti ankstesnį statymą,0,9
+54,Atsiimti visus statymus,0,9
+55,"Privalomas statymas, atliekamas prieš kortų išdalinimą",0,10
+56,Statymas po kortų išdalinimo,0,10
+57,"Privalomas statymas prieš kortų išdalinimą, atliekamas tam tikrų pozicijų žaidėjų",1,10
+58,"Statymas, atliekamas po pirmojo statymo raundo",0,10
+59,Papildomas statymas žaidimo pabaigoje,0,10
+60,"Statymas, atliekamas žaidėjo, turinčio aukščiausią ranką",0,10
+61,Žaidėjas su aukščiausia ranka,0,11
+62,Žaidėjas su žemiausia ranka,0,11
+63,"Žaidėjas kairėje nuo ""dilerio""",0,11
+64,Žaidėjas kairėje nuo mažojo blindo,1,11
+65,"Žaidėjas dešinėje nuo ""dilerio""",0,11
+66,Žaidėjas prieš mažąjį blindą,0,11
+67,Padvigubinti ankstesnį statymą,0,12
+68,"Nedaryti statymo, bet išlikti žaidime",1,12
+69,Padidinti statymą,0,12
+70,Atsisakyti žaidimo,0,12
+71,Išmesti kortas,0,12
+72,Statyti minimalią sumą,0,12
+73,Žaidime naudojamos skirtingos kortų kaladės,0,13
+75,Turnyras vyksta be dalintojo,0,13
+76,Grynųjų pinigų žaidime nėra statymų limitų,0,13
+77,Turnyre žaidžiama tik su vienu žaidėju,0,13
+78,Grynųjų pinigų žaidime žaidžiama tik prie vieno stalo,0,13
+550,"Turnyre žaidėjai iškrenta, kai praranda visas žetonus, o grynųjų pinigų žaidime jie gali pirkti daugiau žetonų",1,13
+79,Penkios iš eilės einančios kortos toje pačioje rankoje,1,14
+80,Keturi vienodi ir viena atsitiktinė korta,0,14
+81,Tris vienodi ir du vienodi,0,14
+82,Dvi poros ir viena atsitiktinė korta,0,14
+83,Aukščiausios penkios kortos bet kokios maškos,0,14
+84,Penkios iš eilės einančios kortos toje pačioje maškoje,0,14
+85,"Kortos, kurias galima keisti tarp žaidėjų",0,15
+86,"Kortos, kurios yra atverčiamos centre stalo ir yra bendros visiems žaidėjams",1,15
+87,"Kortos, naudojamos tik privačiai",0,15
+88,"Kortos, kurios nustato žaidimo etapus",0,15
+89,"Kortos, kurios naudojamos tik specialiais atvejais",0,15
+90,"Kortos, kurias žaidėjas gali pasiimti iš pot",0,15
+91,"Privalomas statymas, atliekamas prieš flopą",0,16
+93,"Statymas, atliekamas tik finaliniame raunde",0,16
+94,"Papildomas statymas, atliekamas po flop",0,16
+95,"Statymas, leidžiantis žaidėjui likti žaidime",0,16
+96,"Neprivalomas statymas, skirtas padidinti pot",0,16
+547,"Privalomas statymas, atliekamas prieš kiekvieno žaidėjo kortų išdalinimą",1,16
+97,"Kortos, paliekamos ant stalo po žaidimo",0,17
+98,Žaidėjo sprendimas neatskleisti savo rankos,0,17
+99,Atsisakymas atskleisti ranką ir jos išmetimas po galutinio statymo raundo,1,17
+100,Specialus statymas,0,17
+101,"Žaidimo taisyklė, draudžianti kortų keitimą",0,17
+102,"Žaidėjo sprendimas daryti ""check""",0,17
+103,Žaidimas pradedamas tik dviem žaidėjais,0,18
+104,Žaidimas tarp paskutinių dviejų žaidėjų turnyre ar stalo žaidime,1,18
+105,Specialus bonusas žaidime,0,18
+106,Dvi paskutinės kortos išdalinimo metu,0,18
+107,Žaidimas be blindų,0,18
+108,Žaidimas be dilers,0,18
+109,Atsisakyti tęsti žaidimą,0,19
+110,Atlikti minimalų statymą,0,19
+111,Padidinti ankstesnį statymą,1,19
+112,Pakeisti kortas,0,19
+113,Padvigubinti ankstesnį statymą,0,19
+114,Statyti visus likusius žetonus,0,19
+115,Žaidėjas su aukščiausia korta išdalinimo metu,0,20
+116,Žaidėjas su žemiausia korta išdalinimo metu,0,20
+118,"Žaidėjas, kuris pirmasis atėjo į žaidimą",0,20
+119,"Žaidėjas, kuris pasiūlė didžiausią statymą",0,20
+120,"Žaidėjas, kuris paskutinis liko žaidime",0,20
+551,"Žetonas, vadinamas ""dilerio žetonu"", kuris perduodamas nuo vieno žaidėjo prie kito",1,20
+121,Pirmasis statymas raunde,0,21
+122,"Pirmasis statymas, atliekamas bet kuriuo žaidimo etapu",0,21
+124,Statymas be žetonų,0,21
+125,Privalomas statymas,0,21
+126,"Statymas, kuris padvigubina pot",0,21
+548,Bet koks statymas,1,21
+127,Statymų limitas,0,22
+128,Bendra visų žaidėjų įstatytų žetonų suma,1,22
+129,Žaidimo etapas,0,22
+130,Paskutinis statymas,0,22
+131,Kortų kaladė,0,22
+132,Žaidėjų grupė,0,22
+133,Atskiras statymas,0,23
+134,Žetonų kiekis,0,23
+135,"Aukščiausia papildoma korta, naudojama nuspręsti lygių kombinacijų nugalėtoją",1,23
+136,Žaidėjo pozicija,0,23
+137,Žaidimo etapas,0,23
+138,Specialus prizas už geriausią kombinaciją,0,23
+139,Didžiausias privalomas statymas,1,24
+140,"Žaidėjas, sėdintis kairėje nuo mažojo blindo",1,24
+141,"Žaidėjas, sėdintis dešinėje nuo mažojo blindo",0,24
+142,"Žaidėjas, sėdintis prieš dilers",0,24
+143,"Žaidėjas, sėdintis kairėje nuo dilers",0,24
+144,Didžiausias galimas statymas žaidime,0,24
+145,Mažiausias privalomas statymas,1,25
+146,"Žaidėjas, sėdintis prieš dilers",0,25
+147,"Žaidėjas, sėdintis kairėje nuo dilers",1,25
+148,"Žaidėjas, sėdintis dešinėje nuo dilers",0,25
+149,"Žaidėjas, sėdintis kairėje nuo didžiojo blindo",0,25
+150,Mažiausias galimas statymas žaidime,0,25
+151,Mažiausia vertės korta,0,26
+152,"Kortelė, naudojama kaip vienas",0,26
+153,"Kortelė, naudojama kaip dvylika",0,26
+154,"Kortelė, naudojama kaip trylika",0,26
+155,"Aukščiausia korta, esanti ace",1,26
+156,Jokia iš išvardytų,0,26
+157,Aukščiausia kombinacija,0,27
+158,Aukščiausia korta iš išmestų kortų,0,27
+159,"Aukščiausia korta, kai nesusidaro jokia kita kombinacija",1,27
+160,"Kortelė, kuri padvigubina žaidėjo žetonus",0,27
+161,"Kortelė, leidžianti žaidėjui pakeisti vieną iš savo kortų",0,27
+162,Aukščiausia korta flop'e,0,27
+163,Penkios iš eilės einačios kortos bet kokio masto,0,28
+164,Penkios iš eilės einančios kortos bet kokios maškos,1,28
+165,Penkios vienodos kortos,0,28
+166,Keturi vienodi ir viena atsitiktinė korta,0,28
+167,Tris vienodi ir du vienodi,0,28
+168,Dvi poros,0,28
+169,Statyti visus žetonus,0,29
+170,Padvigubinti statymą,0,29
+171,Atsisakyti tęsti žaidimą ir atiduoti savo kortas,1,29
+172,Pasilikti žaidime be statymo,0,29
+173,Statyti minimalią sumą,0,29
+174,Atlikti privalomą statymą,0,29
+175,Kiekvienam žaidėjui dalinamos penkios privačios kortos,0,30
+176,Kiekvienam žaidėjui dalinamos keturios privačios kortos,1,30
+177,Kiekvienam žaidėjui dalinamos trys privačios kortos,0,30
+178,Bendros kortos nenaudojamos,0,30
+179,Žaidimas be statymų limitų,0,30
+180,Žaidimas su aukciono statymais,0,30
+181,Vartininko trys išgelbėjimai,0,31
+182,Trenerio trys pakeitimai,0,31
+183,Žaidėjo įmušti trys įvarčiai per vienas rungtynes,1,31
+184,Trijų geltonųjų kortelių gavimas,0,31
+185,Trijų baudinių atlikimas,0,31
+186,Trijų kampinių iškovojimas,0,31
+187,Graikija,0,32
+188,Ispanija,0,32
+189,Rusija,0,32
+190,Vokietija,1,32
+191,Lietuva,0,32
+192,Italija,0,32
+193,4,0,33
+194,10,0,33
+195,6,0,33
+196,5,1,33
+197,15,0,33
+198,12,0,33
+199,Nacionalinė Beisbolo Asociacija,0,34
+200,Šiaurės Amerikos Krepšinio Lyga,0,34
+201,Nacionalinė Krepšinio Asociacija,1,34
+202,Naujojo Amžiaus Sporto Organizacija,0,34
+203,Nacionalinė Bokso Akademija,0,34
+204,Šiaurės Atlanto Futbolo Lyga,0,34
+205,8 minutės,0,35
+206,10 minučių,0,35
+207,12 minučių,1,35
+208,5 minučių,0,35
+209,48 minučių,0,35
+210,45 minučių,0,35
+211,Metimas iš vidutinio atstumo,0,36
+212,Metimas iš baudos aikštelės,0,36
+213,Metimas už tritaškio linijos,1,36
+214,Metimas per visą aikštę,0,36
+215,Metimas iš po krepšio,0,36
+216,Metimas iš žaidimo aikštelės ribų,0,36
+217,4,0,37
+218,5,0,37
+219,6,1,37
+220,7,0,37
+221,8,0,37
+222,9,0,37
+223,Komandos keičiasi aikštės pusėmis,0,38
+224,Pradedamas pratęsimas,1,38
+225,Žaidimas baigiasi lygiosiomis,0,38
+226,Atliekamas metimas nuo centro,0,38
+227,Komandos atlieka baudos metimus,0,38
+228,Žaidimas nutraukiamas,0,38
+229,Anderson Packers,0,39
+230,Minneapolis Lakers,0,39
+231,Baltimore Bullets,0,39
+232,Boston Celtics,0,39
+233,San Luise Hawks,0,39
+234,Philadelphia Warriors,1,39
+235,Fort Wayne Pistons,0,39
+236,Syracuse Nationals,0,39
+237,Baudos metimas,0,40
+238,Laisvas metimas,0,40
+240,Tritaškis,0,40
+241,Dvitaškis,0,40
+242,Metimas nuo linijos,0,40
+549,Išmetimas nuo centro,1,40
+243,Kareem Abdul-Jabbar,0,41
+244,Shaquille O'Neal,0,41
+245,Jerry West,0,41
+246,Bill Russell,1,41
+247,Wilt Chemberlaine,0,41
+248,Michael Jordan,0,41
+249,3 žaidėjai,0,42
+250,4 žaidėjai,0,42
+251,5 žaidėjai,1,42
+252,6 žaidėjai,0,42
+253,7 žaidėjai,0,42
+254,Nėra minimalaus skaičiaus,0,42
+255,10,0,43
+256,11,1,43
+257,12,0,43
+258,25,0,43
+259,20,0,43
+260,22,0,43
+261,UEFA,0,44
+262,FIBA,0,44
+263,FIFA,1,44
+264,IOC,0,44
+265,CONMEBOL,0,44
+266,CONCACAF,0,44
+267,90-120 metrų,0,45
+268,100-110 metrų,0,45
+269,100-130 metrų,1,45
+270,110-120 metrų,0,45
+271,120-140 metrų,0,45
+272,80-100 metrų,0,45
+273,"Pažeidimas, kai žaidėjas muša varžovą",0,46
+274,"Padėtis, kuomet žaidėjas gauna kamuolį esant priekyje paskutinio gynėjo",1,46
+275,"Klaida, kai žaidėjas liestas ranka kamuolį",0,46
+276,"Padėtis, kuomet žaidėjas netinkamai atlieka keitimą",0,46
+277,"Pažeidimas, kai žaidėjas įžengia į varžovų vartų zoną",0,46
+278,"Pažeidimas, kai žaidėjas neleistinai blokuoja varžovą",0,46
+279,45 minučių,1,47
+280,40 minučių,0,47
+281,15 minučių,0,47
+282,90 minučių,0,47
+283,10 minučių,0,47
+284,12 minučių,0,47
+285,Brazilija,0,48
+286,Argentina,0,48
+287,Vokietija,1,48
+288,Belgija,0,48
+289,Ispanija,0,48
+290,Prancūzija,0,48
+291,1958 m.,1,49
+292,2000 m.,0,49
+293,1978 m.,0,49
+294,1999 m.,0,49
+295,1989 m.,0,49
+296,1965 m.,0,49
+297,Madrido Real,1,50
+298,Olympiacos,0,50
+299,CSKA Moskva,0,50
+300,Fenerbahçe,0,50
+301,Barcelona,0,50
+302,Maccabi Tel Aviv,0,50
+303,Real Madrid,1,51
+304,Anadolu Efes,0,51
+305,FC Barcelona,0,51
+306,Olympiacos,0,51
+307,Fenerbahçe,0,51
+308,Milan,0,51
+309,Šarūnas Jasikevičius,0,52
+310,Vassilis Spanoulis,1,52
+311,Juan Carlos Navarro,0,52
+312,Dimitris Diamantidis,0,52
+313,Mike James,0,52
+314,Sergio Llull,0,52
+315,Geriausias sezono žaidėjas,0,53
+316,Geriausias finalo serijos žaidėjas,1,53
+317,Geriausias reguliariojo sezono žaidėjas,0,53
+318,Geriausias ketvirtfinalio serijos žaidėjas,0,53
+319,Geriausias gynėjas,0,53
+320,Komandos kapitonas,0,53
+321,Barselona,1,54
+322,Kaunas,0,54
+323,Atėnai,0,54
+324,Belgradas,0,54
+325,Milano,0,54
+326,Paryžius,0,54
+327,Alphonso Ford,0,55
+328,Juan Carlos Navarro,0,55
+329,Dejan Tomašević,1,55
+330,Anthony Parker,0,55
+331,Dejan Bodiroga,0,55
+332,Joseph Blair,0,55
+333,Arvydas Sabonis,0,55
+334,Mirsad Türkcan,0,55
+335,Nugalėtojai pagal šalis,0,56
+336,Žvaigždžių savaitės rezultatai,0,56
+337,Reguliariojo sezono įskaitinė lentelė,1,56
+338,Tarptautinių draugiškų rungtynių rezultatai,0,56
+339,Balsavimas,0,56
+340,Regionų turnyrai,0,56
+341,Best-of-three serija,0,57
+342,Best-of-five serija,0,57
+343,Vienų rungtynių finalas,1,57
+344,Best-of-seven serija,0,57
+345,Šešių rungtynių serija,0,57
+346,Dvejų rungtynių serija,0,57
+347,Kaunas,1,58
+348,Barselona,0,58
+349,Milano,0,58
+350,Belgradas,0,58
+351,Atėnai,0,58
+352,Berlyne,0,58
+353,Daugiausia surinktų taškų,0,59
+354,Daugiausia atkovotų kamuolių,0,59
+355,Daugiausia rezultatyvių perdavimų,0,59
+356,Daugiausia blokų,0,59
+357,Daugiausia perimtų kamuolių,0,59
+358,Daugiausia naudingumo balų,1,59
+359,Luka Doncic,0,60
+360,Šarūnas Jasikevičius,1,60
+361,Juan Carlos Navarro,0,60
+362,Vasilije Micić,0,60
+363,Jan Veselý,0,60
+364,Vassilis Spanoulis,0,60
+365,Duomenų saugojimo vienetas,0,61
+366,Programavimo kalba,0,61
+367,Mažiausias informacijos kiekis kompiuteryje,1,61
+368,Duomenų perdavimo greitis,0,61
+369,Klaidos pranešimas programoje,0,61
+370,Aplikacijos komponentas,0,61
+371,Interneto plano pavadinimas,0,62
+372,Slaptažodis,0,62
+373,Unikalus skaitmeninis kodas skirtas identifikuoti įrenginį tinkle,1,62
+374,Programos pavadinimas,0,62
+375,Kompiuterio modelis,0,62
+376,Naudotojo vardas internete,0,62
+377,Windows 7,0,63
+378,Windows 8,0,63
+379,MS-DOS,0,63
+380,Windows 8.1,0,63
+381,Windows 10,1,63
+382,Windows XP,0,63
+383,Duomenų saugojimas lokaliuose serveriuose,0,64
+384,Interneto ryšio tipas,0,64
+385,Programavimo kalba,0,64
+386,Duomenų ir programų saugojimas bei naudojimas per internetą,1,64
+387,Socialinis tinklas,0,64
+388,Antivirusinė programa,0,64
+389,Programinė įranga su uždaru kodu,0,65
+390,"Programinė įranga, kurią galima naudoti tik su licencija",0,65
+391,"Programinė įranga, kurios kodas prieinamas viešai",1,65
+392,"Programinė įranga, kuri neveikia Windows sistemose",0,65
+393,Mobilioji aplikacija,0,65
+394,Žaidimas kompiuteriui,0,65
+395,"Programavimo kalba, dažniausiai naudojama svetainių kūrime",1,66
+396,Stiliaus aprašymo kalba,0,66
+397,Duomenų bazės valdymo sistema,0,66
+398,Antivirusinė programa,0,66
+399,Kompiuterio operacinė sistema,0,66
+400,Teksto redagavimo įrankis,0,66
+401,Analoginė technologija,0,67
+402,Mikroschemų technologija,1,67
+403,Garso technologija,0,67
+404,Vaizdo technologija,0,67
+405,Rašalo spausdinimo technologija,0,67
+406,Mechaninė technologija,0,67
+407,Operacinių sistemų grupė grįsta GNU/Linux kerneliu.,1,68
+408,Kompiuterio žaidimas,0,68
+409,Virusas Microsofto sistemai,0,68
+410,Teksto redagavimo programinė įranga,0,68
+411,Duomenų saugojimo įrenginys,0,68
+412,Interneto naršyklė,0,68
+413,Saugumo protokolas,0,69
+414,Tinklalapio optimizavimas paieškos sistemoms,1,69
+415,Duomenų siuntimo metodas,0,69
+416,Socialinio tinklo platforma,0,69
+417,Duomenų bazės valdymo sistema,0,69
+418,Programavimo kalba,0,69
+419,Žaidimas,0,70
+420,Operacinė sistema,0,70
+421,Kompiuterio virusas,0,70
+422,Programavimo kalba,1,70
+423,Duomenų analizės įrankis,0,70
+424,Interneto naršyklė,0,70
+425,Naudotojo sąsaja,0,71
+426,Duomenų bazė,0,71
+427,"Saugumo sistema, blokuojanti neautorizuotą prieigą prie tinklo",1,71
+428,Programavimo aplinka,0,71
+429,Kompiuterio komponentas,0,71
+430,Duomenų saugojimo formatas,0,71
+431,Slaptažodžio klaida,0,72
+432,Prieigos klaida,0,72
+433,Puslapis nerastas klaida,1,72
+434,Serverio klaida,0,72
+435,Duomenų bazės klaida,0,72
+436,Ryšio klaida,0,72
+437,Duomenų bazės valdymo sistema,0,73
+438,Grafinė naudotojo sąsaja,1,73
+439,Garso įrašymo įrenginys,0,73
+440,Duomenų siuntimo protokolas,0,73
+441,Programavimo kalba,0,73
+442,Saugumo protokolas,0,73
+443,Saugo duomenis,0,74
+444,Apdoroja tekstą,0,74
+445,Nukreipia duomenų paketus tinkle,1,74
+446,Apsaugo nuo virusų,0,74
+447,Valdo spausdintuvą,0,74
+448,Stiprina signalą,0,74
+449,Naršyklės papildinys,0,75
+450,Socialinis tinklas,0,75
+451,"Kenkėjiška programinė įranga, reikalaujanti išpirkos už duomenų atrakinimą",1,75
+452,Operacinė sistema,0,75
+453,Duomenų saugojimo įrenginys,0,75
+454,Tinklo protokolas,0,75
+455,Duomenų kopijavimas,0,76
+456,Duomenų šalinimas,0,76
+457,"Procesas, kuriuo iš didelių duomenų rinkinių išgaunama vertinga informacija",1,76
+458,Duomenų saugojimas,0,76
+459,Duomenų siuntimas,0,76
+460,Programavimo metodas,0,76
+461,Super Speed Disk,0,77
+462,Solid State Drive,1,77
+463,Standard Security Device,0,77
+464,Simple Storage Device,0,77
+465,Secure System Disk,0,77
+466,Software Solution Design,0,77
+467,Duomenų analizė,0,78
+468,Dokumentų tvarkymas,0,78
+469,Sukurti vizualiai įtraukiančią aplinką vartotojui,1,78
+470,Interneto greičio padidinimas,0,78
+471,Duomenų saugojimas,0,78
+472,Kompiuterių tarpusavio ryšys,0,78
+473,Internet of Theories,0,79
+474,Integration of Technologies,0,79
+475,Internet of Things,1,79
+476,Interface of Transactions,0,79
+477,Indicator of Traffic,0,79
+478,Installation of Templates,0,79
+479,Naujos kartos procesorius,0,80
+480,Duomenų bazės valdymo sistema,0,80
+481,"Decentralizuota duomenų bazė, sauganti informaciją blokais, kurie yra sujungti grandinės principu",1,80
+482,Kompiuterių tinklo architektūra,0,80
+483,Programavimo kalba,0,80
+484,Grafikos redagavimo įrankis,0,80
+485,Didelio dydžio kompiuteriai,0,81
+486,"Didžiuliai, sudėtingi duomenų rinkiniai, kuriuos sunku apdoroti naudojant įprastines duomenų bazių valdymo sistemas",1,81
+487,Interneto duomenų bazės,0,81
+488,"Duomenys, saugomi debesyje",0,81
+489,"Duomenys, susiję su interneto naudojimu",0,81
+490,Mobiliųjų aplikacijų duomenys,0,81
+491,Robotų gamyba,0,82
+492,Programinės įrangos kūrimas,0,82
+493,"Metodų rinkinys, kuris leidžia kompiuteriams mokytis iš duomenų be aiškiai suformuluotų taisyklių",1,82
+494,Duomenų įvedimas į kompiuterį,0,82
+495,Mašinų techninė priežiūra,0,82
+496,Automatizuotas tekstų rašymas,0,82
+497,Advanced Programming Interface,0,83
+498,Automatic Page Installation,0,83
+499,Application Programming Interface,1,83
+500,Automated Process Implementation,0,83
+501,Accessible Programming Instruction,0,83
+502,Automatic Program Interaction,0,83
+503,Duomenų bazės priekinė dalis,0,84
+504,"Vartotojo sąsaja, su kuria tiesiogiai bendrauja naudotojas",1,84
+505,Serverio priekinė dalis,0,84
+506,Programos kodavimo dalis,0,84
+507,Tinklo priekinė dalis,0,84
+508,Kompiuterio priekinė dalis,0,84
+509,Tinklo nugaros dalis,0,85
+510,Vartotojo sąsajos nugaros dalis,0,85
+511,"Serverio pusės programavimas, kuris apdoroja duomenis užkulisiuose",1,85
+512,Programinės įrangos nugaros dalis,0,85
+513,Duomenų bazės nugaros dalis,0,85
+514,Kompiuterio nugaros dalis,0,85
+515,Duomenų operacijos,0,86
+516,Plėtros ir operacijų integracija,0,86
+517,"Kultūra, praktika ir įrankiai, skirti plėtrai ir operacijoms sujungti",1,86
+518,Vystymosi ir optimizavimo strategija,0,86
+519,Naujas programavimo kalbos pavadinimas,0,86
+520,Duomenų vizualizacijos metodas,0,86
+521,"Programinės įrangos kūrimo metodika, remiantis išankstiniais planais",0,87
+522,"Metodika, leidžianti lanksčiai reaguoti į pokyčius projektų vystyme",1,87
+523,Statybos projektų valdymo metodika,0,87
+524,Internetinių svetainių kūrimo metodika,0,87
+525,Duomenų analizės metodika,0,87
+526,Verslo vystymo strategija,0,87
+527,Duomenų saugojimas debesyje,0,88
+528,Saugumo kamera internete,0,88
+529,"Apsaugos praktikos ir technologijos, skirtos apsaugoti sistemas, tinklus ir duomenis nuo skaitmeninių atakų",1,88
+530,Saugos sistemų programavimas,0,88
+531,Internetinių svetainių kūrimas,0,88
+532,Žiniasklaidos turinio apsauga,0,88
+533,Additive Manufacturing,1,89
+534,Dot Matrix,0,89
+535,Thermal Transfer,0,89
+536,Subtractive Manufacturing,0,89
+537,Lazerinė technologija,0,89
+538,Inkjet technologija,0,89
+539,Duomenų apdorojimas naudojant kvantinius reiškinius,0,90
+540,Apskaičiavimai naudojant senovinę skaičiavimo techniką,0,90
+541,"Skaičiavimo procesas, naudojant kvantinės mechanikos principus",1,90
+542,Apskaičiavimai naudojant molekulinę biologiją,0,90
+543,Programavimas naudojant kvantinius procesorius,0,90
+544,Naujos kartos kompiuterių gamyba,0,90
